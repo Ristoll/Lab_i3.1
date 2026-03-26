@@ -11,29 +11,34 @@
         <small>Special discount for "Програмування для Інтернет" students</small>
     </div>
     <br>
-    <table>
-        <th></th>
-        <tr>
-            <td>
-                <form>
+    <form>
+        <table>
+            <th></th>
+            <tr>
+                <td>
                     <label for="fullname">Name</label><br>
-                    <input type="text" name="Fist_name" required>        
-                    <input type="text" name="Last_name" required><br>
+                    <div class="row">
+                    <div class="box">
+                    <input type="text" name="Fist_name" required><br>
                     <small>First Name</small>
+                    </div>       
+                    <div class="box">
+                    <input type="text" name="Last_name" required><br>
                     <small>Last Name</small><br>
-                </form>
-            </td>
-            <td>
-                <form>
+                    </div>
+                    </div>
+                   
+                </td>
+                <td>
+                   
                     <label for="email">E-mail</label><br>
                     <input type="email" name="email" placeholder="ex: myname@example.com" required><br>
                     <small>example@example.com</small><br>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <form>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <br>
                     <label for="roomtype">Room Type</label><br>
                     <select name="room_types">
@@ -42,20 +47,16 @@
                         <option value="two">Two</option>
                         <option value="three">Three</option>
                     </select><br>
-                </form>
-            </td>
-            <td>
-                <form>
+                </td>
+                <td>
                     <br>
                     <label for="numberofguests">Number of Guests</label><br>
                     <input type="number" placeholder="e.g., 4" required><br>
                     <small>(min 1, max 10)</small><br>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <form>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <br>
                     <label for="arrivardatetime">Arrival Date & Time</label><br>
                     <input type="date" required>
@@ -70,37 +71,31 @@
                     <input type="date" placeholder="Pleace select a day" required><br>
                     <br>
                     <label for="freepickup">Free Pickup?</label><br>
-                </form>
-            </td>
-        </tr>
-        <form>
-        <tr>
-            <td>
-                <label><input type="radio" name="freepickup" required> Yes Please! - Pick me up on arrival</label>
-            </td>
-            <td>
-                <label><input type="radio" name="freepickup"> No Thanks - I`ll make my own way there</label>
-            </td>
-        </tr>
-        </form>
-    </table>
-    <form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><input type="radio" name="freepickup" required> Yes Please! - Pick me up on arrival</label>
+                </td>
+                <td>
+                    <label><input type="radio" name="freepickup"> No Thanks - I`ll make my own way there</label>
+                </td>
+            </tr>
+        </table>
         <br>
         <label for="flightnumber">Flight Number</label><br>
         <input type="text"><br>
         <br>
-        <form>
             <label for="meals">Meals</label><br>
             <label><input type="checkbox" name="meals" required>breakfast</label><br>
             <label><input type="checkbox" name="meals">lunch</label><br>
             <label><input type="checkbox" name="meals">afternoon tea</label><br>
             <label><input type="checkbox" name="meals">dinner</label><br>
-        </form>
         <br>
         <label for="specialrequests">Special Requests</label><br>
         <textarea name="special_requests" rows="10" cols="90"></textarea><br>
         <br>
-        <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
     </form>
 </body>
 </html>
